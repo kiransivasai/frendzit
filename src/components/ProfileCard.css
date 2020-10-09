@@ -1,0 +1,51 @@
+.profileCard {
+  display: flex;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.profileCard__left {
+  margin-right: 50px;
+}
+.profileCard__right > h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.profileCard__right {
+  flex: 1;
+}
+.acceptButton {
+  color: white !important;
+  background-color: green !important;
+  text-transform: capitalize !important;
+}
+.unFollowButton {
+  color: white !important;
+  background-color: #f34141 !important;
+  text-transform: capitalize !important;
+}
+.pendingButton {
+  color: black !important;
+  background-color: #ffffff !important;
+  text-transform: capitalize !important;
+  box-shadow: -2px 1px 8px -1px rgba(0, 0, 0, 0.75);
+}
+.profileCard__info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profileCard__info > p {
+  padding: 20px;
+}
+.profileCard__infoHeader {
+  font-weight: 600;
+}
+.followButton {
+  background-color: #5554e1 !important;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+.profileCard__bio {
+  font-size: 17px;
+  line-height: 25px;
+}

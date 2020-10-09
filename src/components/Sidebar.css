@@ -1,0 +1,19 @@
+.sidebar {
+  padding: 25px 10px;
+  flex: 0.33;
+}
+.sidebar__body {
+  position: fixed;
+  width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 695px) {
+  .sidebar {
+    display: none;
+  }
+}

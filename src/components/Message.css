@@ -1,0 +1,17 @@
+.message {
+  width: fit-content;
+  border-radius: 6px;
+  margin: 10px 20px;
+  background-color: lightgray;
+  color: black;
+}
+.message__user {
+  background-color: #5554e1;
+  color: white;
+  margin-left: auto;
+}
+.message > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}

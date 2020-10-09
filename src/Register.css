@@ -1,0 +1,123 @@
+.register {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: #e9ebee;
+  justify-content: center;
+}
+.register__container {
+  background-color: #fff;
+  width: 325px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin-right: 20px;
+}
+.register__containerLeft {
+  width: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.register__containerLeft > h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+.register__container > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.register__logo {
+  object-fit: contain;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register__container > form > input {
+  height: 42px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 94%;
+  outline: none;
+  border: 1px solid #a6a6a6;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 1px 0 rgba(0, 0, 0, 0.07) inset;
+  padding: 0px 10px;
+}
+.register__container > form > input:focus {
+  transition: all 100ms linear;
+  border-color: #5554e1;
+  box-shadow: 0 0 3px 2px rgba(63, 94, 154, 0.5);
+}
+.register__container > form > input[type="file"] {
+  height: 100%;
+  padding: 10px;
+}
+.profile__pic {
+  height: 42px;
+  margin-bottom: 20px !important;
+  color: black;
+  border: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #a6a6a6;
+  border-radius: 6px;
+  text-transform: capitalize !important;
+  overflow-x: hidden;
+}
+.register__registerButton {
+  background-color: #e15554 !important;
+  border: none;
+  color: white !important;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 10px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  height: 42px !important;
+  cursor: pointer;
+  text-transform: capitalize !important;
+}
+.register__container > form > hr {
+  margin: 25px;
+  width: 98%;
+  color: rgb(221, 221, 221);
+  border: 1px solid;
+}
+.register__container > form > p {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+.register__loginButton {
+  background-color: #5554e1 !important;
+  border: none;
+  color: white !important;
+  height: 42px;
+  border-radius: 6px;
+  width: 185px;
+  font-weight: 600 !important;
+  cursor: pointer;
+  text-transform: capitalize !important;
+}
+
+@media only screen and (max-width: 720px) {
+  .register__container {
+    width: 250px;
+  }
+  .register__logo {
+    width: 150px;
+  }
+  .register__containerLeft {
+    display: none;
+  }
+}

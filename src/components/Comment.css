@@ -1,0 +1,18 @@
+.commentView__top {
+  display: flex;
+  position: relative;
+  padding: 15px;
+}
+.commentView__avatar {
+  margin-right: 10px;
+}
+.commentView__topHeader {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+.commentView__topInfo > p {
+  width: 250px;
+  font-size: 14px;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,11 @@
+.userProfile__body {
+  display: flex;
+  background-color: #f1f2f5;
+  min-height: 100vh;
+}
+.userProfile__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.4;
+}

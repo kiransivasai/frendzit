@@ -1,0 +1,26 @@
+.sidebarRow {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebarRow:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.sidebarRow__icon {
+  margin-left: 30px;
+}
+.sidebarRow > h4 {
+  margin-left: 20px !important;
+  font-weight: 600;
+}
+
+.sidebarRow > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: #5554e1;
+}
+@media only screen and (max-width: 905px) {
+  .sidebarRow__icon {
+    margin-left: 0px;
+  }
+}

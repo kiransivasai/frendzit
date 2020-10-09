@@ -1,0 +1,9 @@
+.videoCard {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+}
+.videoCard__player {
+  width: 100%;
+  max-height: 500px;
+}
