@@ -2,22 +2,39 @@
   display: flex;
   padding: 10px;
   cursor: pointer;
+  align-items: center;
+}
+.activeBar {
+  background-color: lightgray;
+  border-radius: 10px;
 }
 .sidebarRow:hover {
   background-color: lightgray;
   border-radius: 10px;
 }
 .sidebarRow__icon {
+  font-size: 33px !important;
   margin-left: 30px;
 }
 .sidebarRow > h4 {
+  font-size: 18px !important;
   margin-left: 20px !important;
   font-weight: 600;
+  margin-right: 30px;
 }
 
 .sidebarRow > .MuiSvgIcon-root {
   font-size: xx-large;
   color: #5554e1;
+}
+@media only screen and (max-width: 980px) {
+  .sidebarRow > h4 {
+    font-size: 16px !important;
+  }
+  .sidebarRow__icon {
+    font-size: 27px !important;
+    margin-left: 0px;
+  }
 }
 @media only screen and (max-width: 905px) {
   .sidebarRow__icon {

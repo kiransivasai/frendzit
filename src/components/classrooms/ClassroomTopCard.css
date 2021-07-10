@@ -1,0 +1,113 @@
+.classroomTopCard {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  border-radius: 7px;
+}
+.classroomTopCard__left {
+  margin-right: 50px;
+}
+.classroomTopCard__right > h1 {
+  font-size: 37px;
+  font-weight: 500;
+  color: white;
+}
+.classroomTopCard__link {
+  text-decoration: none !important;
+  color: black !important;
+}
+.classroomTopCard__right {
+  flex: 1;
+}
+.classroomTopCard__mem {
+  cursor: pointer;
+  color: white;
+}
+.classroomTopCard__action {
+  display: flex;
+  margin-bottom: 5px;
+}
+.modalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalBox__top {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+.modalBox__left {
+  padding: 10px;
+  flex: 1;
+  align-items: flex-start;
+}
+.modalBox__left > h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.modalBox__right {
+  padding: 10px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.modalPaper {
+  background-color: white;
+  border: 0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 6px;
+}
+.join__classroom {
+  color: white !important;
+  background-color: rgb(19, 177, 19) !important;
+  text-transform: capitalize !important;
+}
+.cancelButton {
+  background-color: white !important;
+  text-transform: capitalize !important;
+  color: black !important;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 10px !important;
+}
+.leave__classroom {
+  color: black !important;
+  background-color: white !important;
+  text-transform: capitalize !important;
+}
+.pendingButton {
+  color: black !important;
+  background-color: #ffffff !important;
+  text-transform: capitalize !important;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+.classroomTopCard__info {
+  display: flex;
+  align-items: center;
+}
+.classroomTopCard__info > p {
+  color: white;
+  padding: 20px;
+}
+.classroomTopCard__infoHeader {
+  font-weight: 600;
+}
+.followButton {
+  background-color: #5554e1 !important;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+.classroomTopCard__bio {
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+}
+@media only screen and (max-width: 720px) {
+  .classroomTopCard {
+    width: 90%;
+  }
+}

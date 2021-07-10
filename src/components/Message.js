@@ -1,12 +1,18 @@
-import React from "react";
+import moment from "moment";
+import React, { forwardRef } from "react";
 import "./Message.css";
+import Linkify from "react-linkify";
 
-function Message({ username, message }) {
-  const isUser = username === message.username;
+const Message = forwardRef(({ userUid, message }, ref) => {
+  const isUser = userUid === message.postedBy;
   return (
-    <div className={`message ${isUser && "message__user"}`}>
-      <h3>{message.message}</h3>
+    <div ref={ref} className={`message ${isUser && "message__user"}`}>
+      <h3>
+        <Linkify>{message.message}</Linkify>
+      </h3>
+
+      <p>{moment(message.postedOn?.toDate()).fromNow()}</p>
     </div>
   );
-}
+});
 export default Message;

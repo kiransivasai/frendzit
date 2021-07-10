@@ -10,13 +10,19 @@ function PostsCard({ user, id }) {
   const [page, setPage] = useState(5);
   const [hasMore, setHasMore] = useState(true);
   useEffect(() => {
-    db.collection("posts")
-      .where("postedBy", "==", id)
-      .orderBy("postedOn", "desc")
-      .limit(page)
-      .onSnapshot((snapshot) =>
-        setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
-      );
+    let isMounted = true;
+    if (isMounted) {
+      db.collection("posts")
+        .where("postedBy", "==", id)
+        .orderBy("postedOn", "desc")
+        .limit(page)
+        .onSnapshot((snapshot) =>
+          setPosts(
+            snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
+          )
+        );
+    }
+    return () => (isMounted = false);
   }, [id, page]);
   const fetchMore = (e) => {
     setPage(page + 5);
@@ -30,6 +36,7 @@ function PostsCard({ user, id }) {
         dataLength={posts.length} //This is important field to render the next data
         next={fetchMore}
         hasMore={hasMore}
+        className="postCard__div"
       >
         {posts.map((post) => (
           <Post

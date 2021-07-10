@@ -43,6 +43,7 @@ function CommentView({ postId, user }) {
             userData={comment.data.postedBy}
             postedOn={moment(comment.data.postedOn?.toDate()).fromNow()}
             comment={comment.data.comment}
+            key={comment.id}
           />
         ))}
       </div>

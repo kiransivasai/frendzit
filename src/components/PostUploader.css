@@ -1,11 +1,12 @@
 .postUploader {
   display: flex;
-  margin-top: 30px;
+  margin-top: 5px;
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
-  width: 100%;
+  max-width: 80%;
+  min-width: 80%;
 }
 .postUploader__top {
   display: flex;
@@ -33,6 +34,7 @@
   justify-content: space-evenly;
 }
 .postUpload__button {
+  font-size: 16px !important;
   background-color: #ed2554 !important;
   color: white !important;
   text-transform: capitalize !important;
@@ -41,7 +43,7 @@
   text-decoration: none;
 }
 .postUploader__option > h3 {
-  font-size: medium;
+  font-size: 16px !important;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -55,6 +57,7 @@
   background-color: #5554e1 !important;
   color: white !important;
   margin: 10px !important;
+  font-size: 16px !important;
 }
 .postUploader__error {
   display: flex;
@@ -63,4 +66,33 @@
   padding: 5px 30px;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 720px) {
+  .postUploader {
+    min-width: 100%;
+  }
+  .postUpload__button {
+    font-size: 12px !important;
+    background-color: #ed2554 !important;
+    color: white !important;
+    text-transform: capitalize !important;
+  }
+  .postUploader__top > input {
+    outline: none;
+    outline-width: 0;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #eff2f5;
+    font-size: 12px !important;
+    width: 100px;
+  }
+  .postUploader__button {
+    flex: 0.33;
+    background-color: #5554e1 !important;
+    color: white !important;
+    margin: 10px !important;
+    font-size: 14px !important;
+  }
 }

@@ -1,6 +1,7 @@
 import { Avatar } from "@material-ui/core";
 import React, { useState } from "react";
 import "./Comment.css";
+import Linkify from "react-linkify";
 
 function Comment({ userData, comment, postedOn }) {
   const [image, setImage] = useState("");
@@ -18,7 +19,7 @@ function Comment({ userData, comment, postedOn }) {
         <div className="commentView__topInfo">
           <p>
             <span className="commentView__topHeader">{displayName}: </span>
-            {comment}
+            <Linkify>{comment}</Linkify>
           </p>
           <p style={{ color: "gray" }}>{postedOn}</p>
         </div>

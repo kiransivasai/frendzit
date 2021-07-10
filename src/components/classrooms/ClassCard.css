@@ -1,0 +1,46 @@
+.classCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 7px;
+  margin: 10px;
+  width: 18.75rem;
+  height: 15rem;
+}
+.classCard__top {
+  display: flex;
+  border-radius: 7px 7px 0px 0px;
+}
+.classCard__link {
+  text-decoration: none !important;
+  color: black !important;
+}
+.classCard__top > h3 {
+  color: white;
+  padding: 20px;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+.classCard__center {
+  flex: 1;
+  display: flex;
+}
+.classCard__center > h4 {
+  font-weight: 600;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: rgb(94, 94, 94);
+}
+.classCard__bottom {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.classCard__explore {
+  color: white !important;
+  text-transform: capitalize !important;
+}
+.shareIcon {
+  cursor: pointer;
+}

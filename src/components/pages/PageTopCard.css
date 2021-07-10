@@ -1,0 +1,121 @@
+.pageTopCard {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+.pageTopCard__left {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageTopCard__right > h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.pageTopCard__link {
+  text-decoration: none !important;
+  color: black !important;
+}
+.pageTopCard__right {
+  flex: 1;
+}
+.pageTopCard__mem {
+  cursor: pointer;
+}
+.pageTopCard__action {
+  display: flex;
+  margin-bottom: 5px;
+}
+.modalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalBox__top {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+.modalBox__left {
+  padding: 10px;
+  flex: 1;
+  align-items: flex-start;
+}
+.modalBox__left > h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.modalBox__right {
+  padding: 10px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.modalPaper {
+  background-color: white;
+  border: 0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 6px;
+}
+.join__page {
+  color: white !important;
+  background-color: rgb(19, 177, 19) !important;
+  text-transform: capitalize !important;
+}
+.cancelButton {
+  background-color: white !important;
+  text-transform: capitalize !important;
+  color: black !important;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 10px !important;
+}
+.leave__page {
+  color: white !important;
+  background-color: #ee2a2a !important;
+  text-transform: capitalize !important;
+}
+.pendingButton {
+  color: black !important;
+  background-color: #ffffff !important;
+  text-transform: capitalize !important;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+.pageTopCard__info {
+  display: flex;
+  align-items: center;
+}
+.pageTopCard__info > p {
+  padding: 20px;
+}
+.pageTopCard__infoHeader {
+  font-weight: 600;
+}
+.followButton {
+  background-color: #5554e1 !important;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+.pageTopCard__bio {
+  font-size: 17px;
+  line-height: 25px;
+}
+.pageCard__action {
+  padding: 0px !important;
+  margin-left: 10px !important;
+}
+.pageCard__edit {
+  background-color: #5554e1 !important;
+  text-transform: capitalize !important;
+  color: white !important;
+}
+@media only screen and (max-width: 720px) {
+  .pageTopCard__pic {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .pageTopCard__left {
+    margin-right: 30px;
+  }
+}

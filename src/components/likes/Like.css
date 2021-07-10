@@ -1,0 +1,16 @@
+.like {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 15px;
+}
+.like:hover {
+  background-color: #ececec;
+}
+.like > h3 {
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 10px;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}

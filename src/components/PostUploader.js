@@ -83,6 +83,7 @@ function PostUploader({ src, user }) {
           postedBy: user.uid,
           postedOn: firebase.firestore.FieldValue.serverTimestamp(),
           userData: db.collection("users").doc(user.uid),
+          resources: null,
         });
       } else {
         setErrorMsg("Please select Image/Video/Description to add Posts");

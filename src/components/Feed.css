@@ -1,14 +1,31 @@
 .feed {
   display: flex;
-  flex: 0.5;
-  padding: 30px 0px;
+  flex: 0.7;
+  padding: 10px 0px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+.feed__div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.infinite-scroll-component__outerdiv {
+  width: 100%;
+}
+.feed__posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
 }
 @media only screen and (max-width: 700px) {
   .feed {
     padding-left: 45px;
+  }
+  .feed__posts {
+    width: 100%;
   }
 }
 

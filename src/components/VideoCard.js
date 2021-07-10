@@ -41,6 +41,11 @@ function VideoCard({ src }) {
         alt="Video"
         loop
       />
+      {isVideoPlaying ? (
+        <></>
+      ) : (
+        <div onClick={onVideoPress} className="playButton"></div>
+      )}
     </div>
   );
 }

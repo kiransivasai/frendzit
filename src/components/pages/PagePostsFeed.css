@@ -1,0 +1,13 @@
+.pagePostsFeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 65%;
+  max-width: 65%;
+}
+@media only screen and (max-width: 720px) {
+  .pagePostsFeed {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}

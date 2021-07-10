@@ -1,6 +1,20 @@
 .postCard {
   border-top: 1px solid gray;
-  width: 40%;
   display: flex;
   justify-content: center;
+  width: 60%;
+}
+.postCard__div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.infinite-scroll-component__outerdiv {
+  width: 100%;
+}
+@media only screen and (max-width: 720px) {
+  .postCard {
+    width: 100%;
+  }
 }

@@ -1,0 +1,45 @@
+.advertisement {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+  padding: 10px;
+}
+.advertisement:last-child {
+  border-bottom: 1px solid lightgray;
+}
+.advertisement__top {
+  display: flex;
+  align-items: center;
+}
+.adTop__info {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.adTop__info > h3 {
+  font-weight: 600;
+  font-size: 17px;
+}
+.adTop__info > p {
+  font-size: 13px;
+  color: gray;
+}
+.advertisement__center > img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+.advertisement__bottom > p {
+  max-width: 260px;
+  padding: 10px 0px;
+}
+.advertisement__bottom > button {
+  background-color: gray;
+  color: white;
+  outline: none;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}

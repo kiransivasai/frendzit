@@ -1,0 +1,25 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f2f5;
+  min-height: 100vh;
+}
+.friends__body {
+  display: flex;
+  justify-content: center;
+}
+.friends__list {
+  flex: 0.75;
+}
+.friendLink {
+  text-decoration: none;
+  color: black;
+}
+.friends__list > h2 {
+  margin: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .friends__list {
+    flex: 1;
+  }
+}

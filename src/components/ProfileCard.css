@@ -1,37 +1,78 @@
 .profileCard {
   display: flex;
   padding-top: 30px;
+  padding-left: 30px;
   margin-bottom: 40px;
 }
 .profileCard__left {
-  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
 }
 .profileCard__right > h1 {
   font-size: 35px;
   font-weight: 500;
 }
+.changeProfilePic {
+  background-color: green !important;
+  color: white !important;
+  text-transform: capitalize !important;
+  margin-top: 10px !important;
+  padding: 5px 10px !important;
+}
+.editProfile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.editProfile__button {
+  background-color: #5554e1 !important;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+.editProfile__input {
+  width: 60% !important;
+  margin-bottom: 10px !important;
+}
+.profileCard__link {
+  text-decoration: none;
+  color: black;
+}
 .profileCard__right {
   flex: 1;
 }
+.profileCard__action {
+  display: flex;
+  margin-bottom: 5px;
+}
 .acceptButton {
   color: white !important;
-  background-color: green !important;
+  background-color: rgb(19, 177, 19) !important;
   text-transform: capitalize !important;
+}
+.cancelButton {
+  background-color: white !important;
+  text-transform: capitalize !important;
+  color: black !important;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 10px !important;
 }
 .unFollowButton {
   color: white !important;
-  background-color: #f34141 !important;
+  background-color: #ee2a2a !important;
   text-transform: capitalize !important;
 }
 .pendingButton {
   color: black !important;
   background-color: #ffffff !important;
   text-transform: capitalize !important;
-  box-shadow: -2px 1px 8px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
 }
 .profileCard__info {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
 .profileCard__info > p {
@@ -48,4 +89,65 @@
 .profileCard__bio {
   font-size: 17px;
   line-height: 25px;
+  width: 400px;
+  overflow: break-word;
+}
+.profileCard__edit {
+  background-color: #5554e1 !important;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+.profileModalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileModalBox__top {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+.profileModalBox__left {
+  padding: 10px;
+  flex: 1;
+  align-items: flex-start;
+}
+.profileModalBox__left > h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.profileModalBox__right {
+  padding: 10px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.profileModalPaper {
+  background-color: white;
+  border: 0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 720px) {
+  .profileCard {
+    width: 100%;
+    padding: 0px;
+  }
+  .profileCard__bio {
+    font-size: 17px;
+    line-height: 25px;
+    width: 100px;
+    overflow: break-word;
+  }
+  .profileCard__pic {
+    margin: 20px;
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .profileCard__right {
+    margin-top: 20px;
+  }
+  .profileModalPaper {
+    min-width: 300px;
+    max-width: 300px;
+  }
 }

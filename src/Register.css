@@ -74,6 +74,10 @@
   text-transform: capitalize !important;
   overflow-x: hidden;
 }
+.loginLink{
+  text-decoration: none;
+  outline: none;
+}
 .register__registerButton {
   background-color: #e15554 !important;
   border: none;

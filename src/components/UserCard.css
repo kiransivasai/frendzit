@@ -1,19 +1,26 @@
 .userCard {
   flex: 0.4;
   display: flex;
-  padding: 30px 0px;
+  padding-top: 10px;
   flex-direction: column;
   align-items: center;
-  padding-left: 100px;
+  position: relative;
+}
+.advertisement__blocks {
+  position: sticky;
+  width: 300px;
+  border-radius: 6px;
+  background-color: white;
+  top: 72px;
 }
 .userCard__body {
   display: flex;
-  position: fixed;
   background-color: white;
   padding: 30px 20px;
   flex-direction: column;
-  margin-top: 40px;
-  width: 300px;
+  width: 270px;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 .userCard__top {
   display: flex;
@@ -22,6 +29,7 @@
   border-bottom: 1px solid gray;
 }
 .userCard__top > h2 {
+  font-size: 25px !important;
   margin-left: 10px;
 }
 .userCard__dp {
@@ -34,10 +42,13 @@
 .userCard__center {
   padding: 10px;
 }
+.userCard__center > p {
+  font-size: 18px !important;
+}
 .userCard__center > p > span {
   font-weight: 600;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1010px) {
   .userCard {
     display: none;
   }

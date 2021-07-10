@@ -1,18 +1,16 @@
 .sidebar {
   padding: 25px 10px;
-  flex: 0.33;
 }
 .sidebar__body {
-  position: fixed;
-  width: 20%;
+  position: sticky;
+  width: fit-content;
+}
+.sidebarLink {
+  text-decoration: none;
+  color: black;
 }
 
-@media only screen and (max-width: 600px) {
-  .sidebar {
-    display: none;
-  }
-}
-@media only screen and (max-width: 695px) {
+@media only screen and (max-width: 845px) {
   .sidebar {
     display: none;
   }

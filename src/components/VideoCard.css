@@ -1,9 +1,20 @@
 .videoCard {
   position: relative;
   width: 100%;
-  max-height: 500px;
 }
 .videoCard__player {
   width: 100%;
-  max-height: 500px;
+  max-height: 550px;
+  object-fit: cover;
+}
+.playButton {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+  bottom: 40%;
+  left: 45%;
 }

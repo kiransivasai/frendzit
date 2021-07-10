@@ -24,7 +24,7 @@
   flex-direction: column;
   min-height: 550px;
   margin-top: 20px;
-  background-color: white;
+  background-color: #ececec;
   border-left: 1px solid lightgray;
   border-radius: 0px 10px 10px 0px;
 }
@@ -41,6 +41,10 @@
 .messages__users {
   max-height: 470px;
   overflow-y: scroll;
+  scrollbar-width: none;
+}
+.messages__users::-webkit-scrollbar {
+  display: none;
 }
 .messages__user {
   display: flex;
@@ -78,6 +82,10 @@
   min-height: 420px;
   max-height: 420px;
   overflow-y: scroll;
+  scrollbar-width: none;
+}
+.messages__viewContainerBody::-webkit-scrollbar {
+  display: none;
 }
 .messages__viewContainerBottom {
   display: flex;
@@ -94,6 +102,7 @@
   border: 1px solid gray;
 }
 .messages__sendButton {
+  font-size: 16px !important;
   background-color: #5554e1 !important;
   color: #fff !important;
   margin-right: 20px !important;

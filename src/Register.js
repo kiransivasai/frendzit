@@ -20,23 +20,20 @@ function Register({ user }) {
   const [errorMsg, setErrorMsg] = useState("");
 
   const createKeywords = (name) => {
-    const arrName = [];
-    let curName = "";
-    name.split("").forEach((letter) => {
-      if (letter === " ") {
-        curName = "";
-      } else {
-        curName += letter;
-        arrName.push(curName);
+    name = name.toLowerCase();
+    const result = [];
+    var i, j;
+    for (i = 0; i < name.length; i++) {
+      for (j = i + 1; j < name.length + 1; j++) {
+        result.push(name.slice(i, j));
       }
-    });
-    return arrName;
+    }
+    return result;
   };
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
       setProfile(e.target.files[0]);
-      console.log(e.target.files[0].name);
       document.getElementById("dp_text").innerHTML = "Profile Uploaded";
     }
   };
@@ -66,7 +63,6 @@ function Register({ user }) {
                       const keys = createKeywords(
                         firstname + " " + lastname.toLowerCase()
                       );
-                      console.log(keys);
                       db.collection("users")
                         .doc(auth.user.uid)
                         .set({
@@ -75,6 +71,9 @@ function Register({ user }) {
                           name: firstname + " " + lastname,
                           photoUrl: imgUrl,
                           time: firebase.firestore.FieldValue.serverTimestamp(),
+                        })
+                        .then((s) => {
+                          window.location.reload();
                         })
                         .catch((e) => console.log(e));
                     })
@@ -115,35 +114,35 @@ function Register({ user }) {
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
             placeholder="First Name"
-            required="true"
+            required={true}
           />
           <input
             type="text"
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
             placeholder="Last Name"
-            required
+            required={true}
           />
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email Address"
-            required
+            required={true}
           />
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
-            required
+            required={true}
           />
 
           <Button
             variant="contained"
             color="default"
             className="profile__pic"
-            onClick={handleDp}
+            onClick={() => handleDp()}
             startIcon={<ImageIcon />}
           >
             <span id="dp_text">Upload Profile Picture</span>
@@ -151,16 +150,16 @@ function Register({ user }) {
           <input
             type="file"
             id="profile_picture"
-            onChange={handleChange}
+            onChange={(e) => handleChange(e)}
             hidden
-            required
+            required={true}
           />
           <Button type="submit" className="register__registerButton">
             Register
           </Button>
           <p>By Clicking Sign Up, you agree to our Terms and Conditions</p>
           <hr />
-          <Link to="/login">
+          <Link to="/login" className="loginLink">
             <Button className="register__loginButton">Login</Button>
           </Link>
         </form>

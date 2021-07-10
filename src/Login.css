@@ -77,6 +77,8 @@
   text-transform: capitalize !important;
 }
 .google__signin {
+  font-size: 15px !important;
+  font-weight: 600 !important;
   background-color: white !important;
   border: 1px solid #a6a6a6 !important;
   margin-top: 10px !important;
@@ -93,6 +95,10 @@
   color: #5554e1;
   font-weight: 400px;
   text-align: center;
+}
+.loginLink {
+  text-decoration: none;
+  outline: none;
 }
 .login__registerButton {
   background-color: #e15554 !important;

@@ -116,7 +116,7 @@ function Login({ user }) {
           </Button>
           <h5>Forgot Password? </h5>
           <hr />
-          <Link to="/register">
+          <Link to="/register" className="loginLink" >
             <Button className="login__registerButton">Create an Account</Button>
           </Link>
         </form>

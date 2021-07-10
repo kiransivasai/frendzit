@@ -1,0 +1,28 @@
+.entAudioCard {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
+.entAudioCard__player {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+.audioPlayButton {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  bottom: 40%;
+  left: 45%;
+}
+@media only screen and (max-width: 720px) {
+  .entAudioCard {
+    min-height: 350px;
+  }
+}

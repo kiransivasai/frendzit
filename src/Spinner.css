@@ -1,0 +1,12 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.spinner > img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}

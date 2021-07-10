@@ -1,0 +1,185 @@
+.classroomFeed {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  flex: 0.9;
+  align-items: center;
+}
+.classroomFeed__top {
+  width: 90%;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid #c7c9d1;
+}
+
+.classroom__input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  outline: none;
+}
+.classroom__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 6px;
+  border: 0px;
+}
+.classroom__searchLink {
+  text-decoration: none;
+  color: black;
+}
+.classroom__user > h4 {
+  font-size: 16px;
+  margin-left: 8px;
+  width: 250px;
+  overflow: hidden;
+}
+.classroom__user:hover {
+  background-color: #eff2f5;
+}
+.classroom__user {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 7px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eff2f5;
+  align-items: center;
+}
+.cls__posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.clss {
+  display: flex;
+  max-width: 500px;
+  min-width: 500px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  flex: 1;
+}
+.leftScroll,
+.rightScroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+.leftScroll:active,
+.rightScroll:active {
+  background-color: #c7c9d1;
+}
+
+.clss::-webkit-scrollbar {
+  display: none;
+}
+.classroomFeed__center {
+  display: flex;
+}
+.clsView {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.cls {
+  padding: 10px;
+  max-width: 60px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.viewAll {
+  color: #5554e1;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cls__avatar {
+  width: 50px !important;
+  height: 50px !important;
+}
+.classroomFeed__info {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #c7c9d1;
+}
+.classroomFeed__info > h3 {
+  flex: 1;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.classroomFeed__info > .classroomCreate {
+  padding: 5px;
+  text-decoration: none !important;
+  color: white !important;
+  background-color: #5554e1 !important;
+  border-radius: 5px !important;
+}
+.classroomFeed__info > .classroomJoin {
+  padding: 5px;
+  text-transform: capitalize !important;
+  text-decoration: none !important;
+  color: white !important;
+  background-color: rgb(19, 177, 19) !important;
+  border-radius: 5px !important;
+  margin: 0px 10px !important;
+}
+.classroom__modalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c7c9d1;
+  padding: 10px;
+}
+.classroom__modal {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  min-width: 350px;
+}
+.classroom__modalTop > h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.modalClose {
+  cursor: pointer;
+}
+.classroom__modalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.classroom__modalInput {
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid #c7c9d1;
+  padding: 0px;
+  width: 150px;
+}
+.classroom__modalButton {
+  background-color: #5554e1 !important;
+  color: white !important;
+  text-transform: capitalize !important;
+  padding: 5px 10px !important;
+}
+@media only screen and (max-width: 720px) {
+  .classroomFeed {
+    flex: 1;
+    overflow-x: hidden;
+  }
+  .classroom__modalInput {
+    width: 100px;
+  }
+  .classroom__modal {
+    min-width: 300px;
+  }
+}

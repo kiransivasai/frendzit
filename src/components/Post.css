@@ -1,6 +1,6 @@
 .post {
-  width: 100%;
-  flex: 1;
+  max-width: 90%;
+  min-width: 90%;
   margin-top: 15px;
   border-radius: 15px;
   background-color: white;
@@ -15,30 +15,109 @@
 .post__avatar {
   margin-right: 10px;
 }
+.profile__link {
+  display: flex;
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
 .post__topInfo > h3 {
-  font-size: medium;
+  font-weight: 600 !important;
+  font-size: 16px !important;
 }
 .post__topInfo > p {
-  font-size: small;
+  font-size: 12px !important;
   color: gray;
 }
 .post__bottom {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px 25px;
+  padding: 5px 25px;
 }
 .post__bottom > p {
-  max-width: 600px;
-  min-width: 500px;
+  font-size: 17px;
+  max-width: 550px;
+  min-width: 550px;
   overflow-wrap: break-word;
 }
+.modalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalBox__top {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+.modalBox__left {
+  padding: 10px;
+  flex: 1;
+  align-items: flex-start;
+}
+.modalBox__left > h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.modalBox__right {
+  padding: 10px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.modalPaper {
+  background-color: white;
+  border: 0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 6px;
+}
+.post__topRight {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 50;
+}
+.more__icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 25px !important;
+}
+.post__topRightOptions {
+  background: white;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgray;
+  position: absolute;
+  margin-top: 22px;
+}
+.postShare__content {
+  position: absolute;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.2);
+  background: white;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.shareButton {
+  text-transform: capitalize !important;
+}
+.instagramIcon {
+  font-size: 25px !important;
+}
+.post__topRightOptions > h5 {
+  padding: 5px 15px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
 .post__image {
-  max-height: 700px;
-  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .post__image > img {
+  max-height: 550px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .post__options {
   padding-top: 10px;
@@ -85,6 +164,7 @@
 @media only screen and (max-width: 600px) {
   .post {
     border-radius: 0px;
+    min-width: 100%;
   }
   .post__bottom > p {
     max-width: 300px;

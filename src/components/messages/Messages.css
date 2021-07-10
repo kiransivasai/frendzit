@@ -1,0 +1,116 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #ececec;
+}
+.messages__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messageUser__link {
+  text-decoration: none !important;
+  color: black;
+}
+.messages__usersList {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  min-height: 550px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid lightgray;
+}
+.messages__viewContainer {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0px 10px 10px 0px;
+}
+.messages__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.messages__header > h2 {
+  font-size: 18px;
+}
+.messages__users {
+  max-height: 470px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.messages__users::-webkit-scrollbar {
+  display: none;
+}
+.messages__user {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.messages__user > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+.messages__user:hover {
+  background-color: #e9e9eb;
+}
+.messages__userPic {
+  margin-right: 10px;
+}
+
+.messages__viewContainerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px;
+  border-bottom: 1px solid lightgray;
+}
+.messages__viewContainerHeader > h3 {
+  font-size: 18px;
+}
+.activeUser {
+  background-color: #e9e9eb;
+}
+.messages__viewContainerBody {
+  min-height: 420px;
+  max-height: 420px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background-color: #f8f8f8;
+}
+.messages__viewContainerBody::-webkit-scrollbar {
+  display: none;
+}
+.messages__viewContainerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.messages__viewContainerBottom > input {
+  flex: 1;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid gray;
+}
+.messages__sendButton {
+  font-size: 16px !important;
+  background-color: #5554e1 !important;
+  color: #fff !important;
+  margin-right: 20px !important;
+}

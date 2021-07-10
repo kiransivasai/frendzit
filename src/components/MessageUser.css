@@ -1,0 +1,18 @@
+.online {
+  background-color: green;
+  width: 8px;
+  border-radius: 50%;
+  height: 8px;
+  margin-right: 5px;
+}
+.offline {
+  background-color: red;
+  width: 8px;
+  border-radius: 50%;
+  height: 8px;
+  margin-right: 5px;
+}
+.user__status {
+  display: flex;
+  align-items: center;
+}

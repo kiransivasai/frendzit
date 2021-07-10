@@ -1,0 +1,8 @@
+.storeItems__body {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.storeItems > h1 {
+  margin-left: 10px;
+}

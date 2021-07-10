@@ -8,12 +8,16 @@ import Sidebar from "./components/Sidebar";
 function UserProfile({ user, id }) {
   return (
     <div className="userProfile">
-      <Header user={user} />
+      <Header key={id} user={user} />
       <div className="userProfile__body">
-        <Sidebar user={user} />
+        {user.uid === id ? (
+          <Sidebar user={user} isActive={"profile"} />
+        ) : (
+          <Sidebar user={user} />
+        )}
         <div className="userProfile__info">
           <ProfileCard user={user} id={id} />
-          <PostsCard user={user} id={id} />
+          <PostsCard key={id} user={user} id={id} />
         </div>
       </div>
     </div>
